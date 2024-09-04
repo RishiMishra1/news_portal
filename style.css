@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+
+}
+nav{
+    background: linear-gradient(180deg,#5a73ca,#876fea);
+    box-shadow: 0px 7px 10px rgba(90, 115, 0, 0.3);
+}
+
+.navbar .logo{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+#search-input{
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none;
+    transform: box-shadow ease;
+}
+
+#search-input:hover{
+    box-shadow: 10px 7px 10px rgba(20, 20, 19, 0.5);
+}
+
+#search-button{
+    padding: 10px 20px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-button:hover{
+    box-shadow: 10px 7px 10px rgba(20, 20, 19, 0.5);
+    background-color: #5a73ca;
+    color: #fff;
+}
+
+#blog-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    width: 280px;
+    border: 1px solid #876fea;
+    padding: 1rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.blog-card:hover{
+    box-shadow: 10px 7px 10px rgba(20, 20, 19, 0.5);
+}
+
+.blog-card h2{
+    color: #141414;
+    font-size: 1.7rem;
+    font-weight: 500;
+
+}
+
+
+.blog-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    
+}
+
+.blog-card p{
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+@media(max-width: 500px){
+    .navbar .logo{
+    font-size: 1rem;
+    }
+    .search-container{
+        display: flex;
+    }
+    #search-input{
+       
+        padding: 5px 7px;
+        font-size: 9px;
+        border-radius: 5px;
+        
+    }
+    #search-button{
+        padding: 5px 7px;
+        font-size: 9px;
+        border-radius: 5px;
+
+    }
+    .navbar{
+        width: 280px;
+        margin: auto;
+    }
+}
